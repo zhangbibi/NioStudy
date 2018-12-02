@@ -1,0 +1,26 @@
+# gradle ignore
+.gradle
+build/
+*.jar
+*.war
+*.zip
+*.tar
+
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
+
+# temp ignore
+logs/
+*.doc
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
+# system ignore
+.DS_Store
+Thumbs.db
