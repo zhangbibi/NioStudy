@@ -12,11 +12,17 @@ public class NioTest1 {
 
         IntBuffer buffer = IntBuffer.allocate(10);
 
-        for (int i = 0; i < buffer.capacity(); i++) {
+        for (int i = 0; i < 5; i++) {
             buffer.put(new Random().nextInt());
         }
 
+
         buffer.flip();
+
+        for (int i = 0; i < 5; i++) {
+            buffer.put(new Random().nextInt());
+        }
+
 
         while (buffer.hasRemaining()) {
             System.out.println(buffer.get());
